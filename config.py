@@ -1,0 +1,14 @@
+MONDE_LARGEUR	: int = 30                  #Largeur du monde (nombre de colonnes)
+MONDE_LONGUEUR : int = 30                 #Hauteur du monde (nombre de lignes)
+NB_PROIES : int = 40	        #Nombre d’herbivores au départ
+NB_PREDATEUR : int = 10	        #Nombre de carnivores au départ
+MAX_STEPS = 2000                 #Nombre maximal d’itérations
+ENERGIE_BASE : float = 20.0         #Énergie initiale donnée à chaque animal
+COUT_DEPLACEMENT	: float = 1.0               #Coût énergétique d’un déplacement
+GAIN_NOURRITURE_PROIES : float = 4
+MIN_REPRODUCTION : float = 30	#Énergie minimale pour se reproduire
+COUT_REPRODUCTION : float = 15
+P_PREDATION : float = 0.2              #Probabilité qu'un prédateur chasse sa proie
+P_REPRODUCTION_PROIES : float=0.4
+P_REPRODUCTION_PREDATEURS : float=0.2
+P_POUSSE_PLANTES : float = 0.05
