@@ -42,8 +42,8 @@ class Monde():
 
         animal_nouv : List["Animal"] = []
         for a in self.animals:
-            a.deplacement()
             a.verifie_mort()
+            a.deplacement()
 
             if a.est_vivant:
                 a.manger(self)

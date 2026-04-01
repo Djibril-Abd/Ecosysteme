@@ -10,12 +10,12 @@ y0 = 9.0
 # de mortalité naturel des prédateurs et de reproduction des prédateurs par proie consommée
 
 alpha = 1.0
-beta =0.1
+beta =0.2
 gamma =1.5
 delta =0.075
 
 
-N = 1000
+N = 2000
 t = 0.01
 
 x = []

@@ -14,7 +14,7 @@ class Predateurs(Animal):
         proies = self.recherche_voisins([a for a in world.animals if isinstance(a,Proies)])
         for _,proie in proies:
                 if np.random.random() <= cg.P_PREDATION:
-                    self.energie += proie.energie
+                    self.energie = min(cg.MAX_ENERGIE,cg.GAIN_NOURRITURE + 0.3*proie.energie + self.energie)
                     proie.est_vivant = False
                     print(f"Prédateur mange la proie à ({proie.posx},{proie.posy}). énergie actuelle = {self.energie}")
                     break

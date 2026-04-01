@@ -2,7 +2,6 @@ import numpy as np
 from abc import ABC
 from typing import Tuple,List
 import math
-from simulation import utils as ut
 from simulation.world import *
 import config as cg
 import random

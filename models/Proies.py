@@ -15,7 +15,7 @@ class Proies(Animal):
         x = self.posx
         y = self.posy
         if monde.env.verif_pousse(x,y):
-            self.energie = self.energie + cg.GAIN_NOURRITURE_PROIES
+            self.energie = min(cg.MAX_ENERGIE,self.energie + cg.GAIN_NOURRITURE)
             monde.env.grille[x][y] = False
             return True
         return False
