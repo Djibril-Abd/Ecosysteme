@@ -1,0 +1,33 @@
+# EcoSim
+
+Une réalisation d'Abdoulhamidi Djibril
+
+
+
+##   Présentation du projet
+    Ce projet implémente une modélisation d'un écosystème simple
+    en deux dimensions, mettant en interaction proies et prédateurs.
+
+    L'objectif est d'approcher les oscillations périodiques de 
+    la modélisation Lotka-Volterra, à partir de règles simples comme
+    le déplacement, la reproduction, la prédation et autres.
+
+##   Structure du projet
+
+
+    ├── models/
+    |   ├── _init_.py
+    │   ├── Animal.py
+    │   ├── Proies.py
+    │   ├── Predateurs.py
+    │   ├── Environnement.py
+    ├── simulation
+    |   ├── _init_.py
+    |   ├── world.py
+    |   ├── engine.py
+    ├── visualisation
+    |   ├── _init_.py
+    |   ├── display.py
+    ├── Modelisation_selon_Lotka_Volterra.py
+    ├── config.py
+    ├── main.py
